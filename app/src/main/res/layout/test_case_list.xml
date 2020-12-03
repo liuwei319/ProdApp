@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/loginbgimage">
+
+    <ProgressBar
+        android:id="@+id/testcase_list_progress1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"/>
+    <include
+        android:id="@+id/ic_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/app_title" />
+
+    <com.kevin.prodapp.view.ExpandMenuView
+        android:id="@+id/expandTabView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ic_title"
+        android:background="@null"
+         />
+
+    <ListView
+        android:id="@+id/testcase_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expandTabView"
+        android:layout_alignParentLeft="true"/>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/serch"
+        android:layout_alignParentRight="true"
+        app:borderWidth="0px"
+        android:backgroundTint="@android:color/background_light"
+        android:id="@+id/serch_testcase"
+       />
+</RelativeLayout>

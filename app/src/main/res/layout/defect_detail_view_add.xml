@@ -1,0 +1,244 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/loginbgimage"
+    android:gravity="right"
+    android:orientation="vertical"
+    tools:context=".ui.list.DefectDetailActivity">
+
+
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TableLayout
+        android:id="@+id/defectDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+
+        <TableRow
+            android:gravity="center"
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="2dp"
+                android:background="#BACBDC"
+                android:gravity="center"
+                android:text="概述:"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                />
+            <EditText
+                android:id="@+id/add_title"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_height="40dp"
+                android:background="#BACBDC"
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/add_title"-->
+            <!--                android:layout_margin="2dp"-->
+            <!--                android:layout_height="40dp"-->
+            <!--                android:background="#BACBDC"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:gravity="left"-->
+            <!--                android:textSize="15dp" />-->
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_margin="2dp"
+                android:background="#BACBDC"
+                android:text="严重级别:"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/yanzhongjibie"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:entries="@array/serverity_arry"
+
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_margin="2dp"
+                android:background="#BACBDC"
+                android:text="优先级别:"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/youxianjibie"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:entries="@array/priority_arry" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_margin="2dp"
+                android:background="#BACBDC"
+                android:text="提交版本:"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/add_submitVersion"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:background="#BACBDC"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:ignore="RtlCompat" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:background="#BACBDC"
+                android:text="详述:"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/add_desc"
+                android:layout_height="80dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape"
+                android:enabled="true"
+                android:gravity="top"
+                android:maxLines="10"
+                android:minLines="8"
+                android:scrollbars="vertical"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+        </TableRow>
+
+
+    </TableLayout>
+<TableLayout
+
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:id="@+id/defectDetail2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal">
+    <TableRow
+        android:layout_height="30dp"
+        android:layout_width="match_parent"
+        >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:background="#BACBDC"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="详述图片:"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <!--            <ScrollView-->
+        <!--                android:layout_margin="2dp"-->
+        <!--                android:background="#BACBDC"-->
+        <!--                android:layout_width="120dp"-->
+        <!--                android:layout_height="80dp">-->
+        <LinearLayout
+            android:layout_marginTop="2dp"
+            android:background="#BACBDC"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/defect_imageview"
+                android:layout_width="150dp"
+                android:layout_height="80dp" />
+
+
+        </LinearLayout>
+        <!--            </ScrollView>-->
+
+        <Button
+            android:id="@+id/chooseImage"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="选择图片"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/save_add"
+        android:layout_width="fill_parent"
+        android:textColor="@color/black"
+        android:layout_height="50dp"
+        android:text="保存" />
+
+</TableLayout>
+
+
+</LinearLayout>

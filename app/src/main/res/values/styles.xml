@@ -1,0 +1,65 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+<!--    &lt;!&ndash; Base application theme. &ndash;&gt;-->
+<!--    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+<!--    </style>-->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@android:color/black</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="colorAccent">@color/black_overlay</item>
+        <item name="android:windowNoDisplay">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="SpnStyle">
+        <item name="android:colorControlNormal" tools:targetApi="lollipop">#000000</item>
+    </style>
+    <style name="SpinnerStyle">
+        <item name="colorAccent">#888888</item>
+        <item name="colorControlNormal">@android:color/black</item> <!--改变了spinner的颜色  -->
+    </style>
+
+<!--    <style name="FullscreenTheme" parent="AppTheme">-->
+<!--        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>-->
+<!--        <item name="android:windowActionBarOverlay">true</item>-->
+<!--        <item name="android:windowBackground">@null</item>-->
+<!--        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>-->
+<!--        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>-->
+<!--        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>-->
+<!--    </style>-->
+
+<!--    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">-->
+<!--        <item name="android:background">@color/white</item>-->
+<!--    </style>-->
+    <!-- 自定义Dialog样式 -->
+    <style name="custom_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="PopupWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+    </style>
+
+    <style name="vertical_layout">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@drawable/domo_toolbar_bg</item>
+    </style>
+    <style name="horizontal_layout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@drawable/filemanagermenubg_w</item>
+    </style>
+</resources>

@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbgimage"
+    tools:context=".ui.list.MoreInfoActivity">
+
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/app_title"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:onClick="click_deleteButton"
+        android:background="@drawable/del"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        tools:ignore="OnClick" />
+<!--    <Button-->
+<!--        android:layout_alignRight="@+id/ic_title"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:onClick="click_deleteButton"-->
+<!--        android:text="删除"-->
+<!--        android:id="@+id/delete1"-->
+<!--        android:visibility="gone"-->
+<!--        tools:ignore="NotSibling,OnClick,UnknownId" />-->
+
+
+    <Button
+        android:id="@+id/add_btn1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_alignRight="@+id/ic_title"
+        android:background="@drawable/add1"
+
+        />
+    <!--    //下拉刷新-->
+<!--    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:id="@+id/swswsw"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/ic_title">-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/line2"-->
+
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_alignParentBottom="true" >-->
+<!--           -->
+<!--            <Button-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="删除"-->
+<!--                android:onClick="click_deleteButton"-->
+<!--                tools:ignore="OnClick" />-->
+<!--            <Button-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="取消"-->
+<!--                android:onClick="click_cancelButton"-->
+<!--                tools:ignore="OnClick" />-->
+<!--        </LinearLayout>-->
+
+        <ListView
+android:layout_below="@id/ic_title"
+            android:id="@+id/defectList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/serch_id"
+            android:layout_alignParentLeft="true" />
+
+
+
+<!--    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+    <RelativeLayout
+
+        android:id="@+id/serch_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="0dp"
+        android:orientation="vertical"
+        android:src="@drawable/serch">
+
+
+                <EditText
+                    android:layout_below="@id/defectList"
+                    android:id="@+id/etSearch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:hint="模糊匹配案例编号和案例名称"
+                    android:paddingLeft="32dp"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:drawableLeft="@drawable/serch1"
+                    android:textColor="@color/black"
+                    tools:ignore="NotSibling" />
+
+<!--        <EditText-->
+<!--            android:layout_below="@id/defectList"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:textSize="16sp"-->
+<!--            android:paddingLeft="32dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:drawableLeft="@drawable/serch1"-->
+<!--            android:hint="Serching..."-->
+<!--            tools:ignore="NotSibling" />-->
+
+
+    </RelativeLayout>
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="5dp">-->
+
+    <!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="15dp"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_alignParentRight="true"-->
+    <!--            android:src="@drawable/add"-->
+    <!--            android:backgroundTint="@android:color/background_light"-->
+    <!--            android:id="@+id/add_btn1"-->
+    <!--            />-->
+
+    <!--    </RelativeLayout>-->
+
+</RelativeLayout>

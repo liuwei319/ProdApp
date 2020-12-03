@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.main.SettingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="183px">
+
+        <TextView
+            android:id="@+id/tvmeinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="关于我的信息"
+            android:textSize="10pt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25px"
+            android:layout_marginRight="25px"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rect_gray"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/ll_clear"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/iv_clear_shark"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:src="@drawable/clearcachedata" />-->
+
+                <TextView
+                    android:id="@+id/zhuxiao"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="注销" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25px"
+        android:layout_marginRight="25px"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rect_gray"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/updateIp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_clear_shark1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginLeft="0dp"-->
+<!--                android:padding="5dp"-->
+<!--                android:src="@drawable/xiugai" />-->
+
+            <TextView
+                android:id="@+id/xiugaiip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:text="修改IP" />
+        </RelativeLayout>
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/logut_in_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="220dp"
+                android:layout_marginRight="50px"
+                android:background="@drawable/loginlablebgimage"
+                android:text="退出应用"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+<!--            <Button-->
+<!--                android:id="@+id/logut_in_button"-->
+<!--                style="?android:textAppearanceSmall"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_marginLeft="50px"-->
+<!--                android:layout_marginTop="250dp"-->
+<!--                android:layout_marginRight="50px"-->
+<!--                android:background="@drawable/exitbgimage"-->
+<!--                android:text="退出应用"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textStyle="bold" />-->
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

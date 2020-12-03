@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <CheckBox
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:layout_marginLeft="10dp"
+       />
+    <TextView
+        android:id="@+id/enter_id"
+        android:textSize="12dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+       />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/enter_id"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <TextView
+            android:layout_toRightOf="@+id/checkbox"
+            android:id="@+id/list_child_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/list_child_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" />
+
+        <!--        <CheckBox-->
+        <!--            android:id="@+id/checkbox"-->
+        <!--            android:layout_width="5dp"-->
+        <!--            android:layout_height="5dp"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:layout_centerVertical="true"-->
+        <!--            android:visibility="invisible"-->
+        <!--            />-->
+
+
+    </LinearLayout>
+
+</RelativeLayout>

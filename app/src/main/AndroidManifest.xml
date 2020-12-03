@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kevin.prodapp">
+
+    <!-- //修改配置文件权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" /> <!-- //MQTT -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="XTestApp"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <service
+            android:name=".utils.MQTTService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity android:name=".ui.list.Defect5Activity" />
+        <activity android:name=".ui.list.Defect4Activity" />
+        <activity android:name=".ui.list.Defect3Activity" />
+        <activity android:name=".ui.list.Defect2Activity" />
+        <activity android:name=".ui.list.TestCaseDetailActivity" />
+        <activity android:name=".ui.main.UpdateIpActivity" />
+        <activity android:name=".ui.login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:label="@string/app_logo"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".ui.list.SecondActivity"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".ui.list.ImageZoomActivity"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".ui.list.MoreInfoActivity"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".ui.list.DefectDetailActivity"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".ui.list.TestCaseListActivity"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".ui.list.TestCaseSerchActivity"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".ui.list.DefectAddActivity"
+            tools:ignore="DuplicateActivity" />
+
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+    </application>
+
+</manifest>

@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <string-array name="serverity_arry">
+        <item>--选择[严重级别]--</item>
+        <item>灾难</item>
+        <item>严重</item>
+        <item>一般</item>
+        <item>轻微</item>
+    </string-array>
+
+    <string-array name="priority_arry">
+        <item>--选择[优先级别]--</item>
+        <item>高</item>
+        <item>中</item>
+        <item>低</item>
+    </string-array>
+
+<!--    <string-array name="dRespUser_arry">-->
+<!--        <item>&#45;&#45;请选择待分配用户&#45;&#45;</item>-->
+
+<!--    </string-array>-->
+</resources>

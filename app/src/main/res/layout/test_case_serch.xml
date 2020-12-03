@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbgimage"
+    tools:context=".ui.list.MoreInfoActivity">
+
+    <RelativeLayout
+        android:id="@+id/caseSerch_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <include
+            android:id="@+id/ic_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/app_title" />
+
+        <RelativeLayout
+            android:id="@+id/caseserch_border"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/ic_title"
+            android:gravity="center_vertical">
+
+            <Button
+                android:text="查询"
+                android:id="@+id/serch_testcase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+            </Button>
+
+            <EditText
+                android:id="@+id/casenameornum"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/serch_testcase"
+                android:singleLine="true"
+                android:layout_width="fill_parent">
+            </EditText>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/case_serch_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/caseSerch_top"
+        android:layout_alignParentLeft="true"/>
+
+
+</RelativeLayout>
